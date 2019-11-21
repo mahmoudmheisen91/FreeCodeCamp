@@ -1,19 +1,32 @@
+<header>
+    <h1>Weapons of the Ninja</h1>
+    <style>
+        .sr-only {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            top: auto;
+            overflow: hidden;
+        }
+        p:focus {
+            background-color: yellow;
+        }
+    </style>
+</header>
+  
+<main></main>
+
 <img src="samuraiSwords.jpeg" alt="test">
 
+<!--
 <article>
     <h2>Is Chuck Norris a Cat Person?</h2>
     <p>To Come...</p>
 </article>
 
-<header>
-    <h1>Weapons of the Ninja</h1>
-</header>
-  
-<main></main>
-  
-<footer>&copy; 2018 Camper Cat</footer>
 
-<!--
+
     article. An article is for standalone content, and a section 
     is for grouping thematically related content. They can be 
     used within each other, as needed. For example, if a book 
@@ -25,7 +38,7 @@
 -->
 
 <nav>
-    <ul>
+    <ul> 
       <li><a href="#stealth">Stealth &amp; Agility</a></li>
       <li><a href="#combat">Combat</a></li>
       <li><a href="#weapons">Weapons</a></li>
@@ -44,7 +57,7 @@
       Master Camper Cat demonstrates proper form of a roundhouse kick.
     </figcaption>
 </figure>
-
+ 
 <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name">
@@ -73,3 +86,78 @@
     </time>
     , which ended in a draw.
 </p>
+
+<table class="sr-only">
+    <caption>
+        Hours of Weekly Training in Stealth, Combat, 
+        and Weapons
+    </caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">Stealth &amp; Agility</th>
+            <th scope="col">Combat</th>
+            <th scope="col">Weapons</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Week One</th>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th scope="row">Week Two</th>
+            <td>4</td>
+            <td>5</td>
+            <td>3</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th scope="row">Week Three</th>
+            <td>4</td>
+            <td>6</td>
+            <td>3</td>
+            <td>13</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- 
+    This ranges from 1:1 for the same color, or no
+    contrast, to 21:1 for white against black, the 
+    strongest contrast. There are many contrast checking
+    tools available online that calculate this ratio 
+    for you.
+    WCAG-recommended contrast ratio of 4.5:1 applies
+    for color use as well as gray-scale combinations
+    Darker shades on the color wheel are considered to
+    be shades of blues, violets, magentas, and reds,
+    whereas lighter tinted colors are oranges, yellows,
+    greens, and blue-greens.
+
+    Note: Some online color picking tools include visual 
+    simulations of how colors appear for different types 
+    of colorblindness. These are great resources in addition
+    to online contrast checking calculators.
+--> 
+ 
+<a id="second" href="#" accesskey="c"></a>
+<p tabindex="0">Instructions: Fill in ALL your 
+    information then click <b>Submit</b>
+</p>
+
+<form>
+    <label for="search">Search:</label>
+
+    <input type="search" tabindex="1" name="search" id="search">
+    <input type="submit" tabindex="2" name="submit" value="Submit" id="submit">
+    
+</form>
+
+<footer>&copy; 2018 Camper Cat</footer>
+ 
