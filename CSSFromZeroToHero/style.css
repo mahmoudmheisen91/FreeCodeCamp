@@ -6,6 +6,34 @@
     color: blue;
 }
 
+/* attribute selector */
+h2[class=subtitle] {
+    color: violet;
+}
+
+img {
+    width: 50%;
+}
+
+/* ^ start with */
+/* * means contain this src*="images/" */
+img[src^="images/"] {
+    border: 5px solid steelblue;
+}
+
+/* good with white spaces */
+/* some libraries conatin ids in thier class names
+class-123
+class-222 */
+h2[class~=class2] {
+    background: aqua;
+}
+
+/* class2 or class2- */
+h2[class|=class2] {
+    background: brown;
+}
+
 #contact-id {
     color: green;
 }
