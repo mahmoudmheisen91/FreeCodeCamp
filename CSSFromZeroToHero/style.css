@@ -1,0 +1,67 @@
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+#contact-id {
+    color: green;
+}
+
+h1 {
+    border: 2px solid black;
+}
+
+h1:hover {
+    color: green;
+}
+
+li:last-child {
+    color: yellowgreen;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+li:only-child {
+    color: purple;
+}
+
+/* pseudo selctor */
+/* #google-link:link {
+    color: blue;
+}
+
+#google-link:visited {
+    color: red;
+}
+
+
+#google-link:hover {
+    color: green;
+} */
+
+/* sibling selector ever a after h2 */
+h2 + a {
+    color: gray;
+}
+
+/* general sibling combinator/selector */
+/* same as sibling, has to share same parent */
+textarea ~ button {
+    color: purple;
+}
+
+/* child selector, only direct children */
+/* every li inside ul */
+ul > li {
+    text-decoration: underline;
+}
+
+/* decendent selector */
+ul li {
+    font-style: italic;
+}
