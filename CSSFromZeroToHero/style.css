@@ -93,3 +93,70 @@ ul > li {
 ul li {
     font-style: italic;
 }
+
+.grad {
+    /* px, pt, pc=12pt */
+    height: 400px;
+    /* 70% of parent */
+    /* vw vh, relative to viewport not parent 1v=1% */
+    /* em relative scale ex. 2em scale by 2 */
+    width: 70%;
+    /* background: linear-gradient(to top right, 
+    red, blue); */
+    /* background: linear-gradient(160deg, 
+    red, blue); */
+
+    /* co bg size with radail gradient */
+    /* percent from less to high */
+    /* default is ellipse */
+    background: radial-gradient(circle, red 20%, blue 40%, green 60%);
+}
+
+p {
+    /* none, underline, line-through, overline */
+    text-decoration: underline;
+
+    text-transform: capitalize;
+
+    text-align: justify;
+
+    /* fonts */
+    /* 25% bigger, responsive */
+    font-size: 1.25em; 
+
+    /* bolding, max 900 */
+    /* fonts support specific values */
+    font-weight: 400;
+
+    /* oblique more italic */
+    font-style: italic;
+
+    /* serif fonts has littile lines */
+    /* sans-serif has no line cleaner good with digital */
+    /* mono space char has same width */
+    /* external fonts link before stylesheet */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
