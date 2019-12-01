@@ -40,6 +40,7 @@ h2[class|=class2] {
 
 h1 {
     border: 2px solid black;
+    
 }
 
 h1:hover {
@@ -137,8 +138,15 @@ p {
     /* external fonts link before stylesheet */
 }
 
+/* content play with width and height */
+/*  */
 
+/* span is inline, other element are block (new line) */
+/* inline-block ,*/
 
+/* float: right */
+/* float: left, right, inherit, none  (default) */
+/* display: inline, block, inline-block, none(disapear) */
 
 
 
