@@ -22,14 +22,14 @@ img[src^="images/"] {
 }
 
 /* good with white spaces */
-/* some libraries conatin ids in thier class names
-class-123
-class-222 */
 h2[class~=class2] {
     background: aqua;
 }
 
 /* class2 or class2- */
+/* some libraries conatin ids in thier class names
+class-123
+class-222 */
 h2[class|=class2] {
     background: brown;
 }
@@ -73,7 +73,7 @@ li:only-child {
     color: green;
 } */
 
-/* sibling selector ever a after h2 */
+/* sibling selector every a after h2 */
 h2 + a {
     color: gray;
 }
@@ -132,7 +132,7 @@ p {
     /* oblique more italic */
     font-style: italic;
 
-    /* serif fonts has littile lines */
+    /* serif fonts has little lines */
     /* sans-serif has no line cleaner good with digital */
     /* mono space char has same width */
     /* external fonts link before stylesheet */
@@ -148,8 +148,34 @@ p {
 /* float: left, right, inherit, none  (default) */
 /* display: inline, block, inline-block, none(disapear) */
 
+/* flexbox has container and items */
+
+.container {
+	background-color: rgb(180, 179, 179);
+    margin: 20px;
+
+    /* width: 500px; */
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
 
 
+}
+
+.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px; 
+}
 
 
 
