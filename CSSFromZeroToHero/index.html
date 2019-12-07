@@ -70,9 +70,16 @@
             ">E</div>
         </div>
 
+        <!-- grid-column: 1 / -1;
+            grid-row: 2 / span 2;
+        combine in grid-area, row st col st row end col end-->
         <div class="grid-container">
             <div class="grid-item" style="
             background: rgb(255, 150, 150);
+            grid-column: 1 / -1;
+            grid-row: 2 / span 2;
+
+            grid-area: 2 1 span 2 -1;
             ">1</div>	
             <div class="grid-item" style="
             background: rgb(170, 255, 140);
@@ -86,6 +93,9 @@
             <div class="grid-item" style="
             background: rgb(140, 210, 255);
             ">5</div>	
+            <div class="grid-item" style="
+            background: rgb(253, 166, 4);
+            ">6</div>	
         </div>
 
         <h2 id="contact-id"> contact section </h2>
