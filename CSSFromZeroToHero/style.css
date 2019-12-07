@@ -227,6 +227,52 @@ p {
 
 
 
+.submit-button {
+	margin: 20px 10px;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+    background: rgb(89, 150, 255);
+    /*transform: translate(50px, 30px); /* shift x, y */
+    /* transform: scale(0.5); */
+    /* transform: rotate(45deg); */
+    /* transform: skewX(45deg); */ /*rot around x axis*/
+
+    /* scale, skew y x (in decemal (mean degree)) scale y
+    translate x y*/
+    transform: matrix(1, 0, 0.45, 1, 100, -50);
+
+    /* property then time then style then delay */
+    /* more than one property we can but comma */
+    transition: background, padding 300ms ease-in 0s;
+
+
+    /* browser support prefixes */
+    /* older version do not support new features */
+	 /*-webkit-transition: all 500ms ease; /*chrome and safari*/
+	 /*-moz-transition: all 500ms ease; /* firefox */
+	 /*-o-transition: all 500ms ease; /* opra */
+}
+
+
+.submit-button:hover {
+    background: rgb(23, 250, 80);
+    padding: 20px 30px;
+
+    
+    
+}
+
+
+
+
+
+
+
 
 
 
