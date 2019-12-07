@@ -254,7 +254,8 @@ p {
     /* browser support prefixes */
     /* older version do not support new features */
 	 /*-webkit-transition: all 500ms ease; /*chrome and safari*/
-	 /*-moz-transition: all 500ms ease; /* firefox */
+     /*-moz-transition: all 500ms ease; /* firefox */
+     /*-ms-transition: all 500ms ease; /* microsoft, IE */
 	 /*-o-transition: all 500ms ease; /* opra */
 }
 
@@ -268,10 +269,40 @@ p {
 }
 
 
+/* Animations */
+/* @keyframes than name */
+@keyframes red-to-black {
+    /* start from{} */
+    0% {
+        background: red;
+        transform: translate(0px, 0px);
+    }
 
+    50% {
+        background: yellow;
+        transform: translate(10px, 10px);
+    }
 
+    /* end to{} */
+    100% {
+        background: black;
+        transform: translate(20px, 20px);
+    }
+}
 
+#anime {
+    animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: -2s; /*negative just start from middle*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
+    /* shorthand property */
+    /* animation: red-to-black 4s linear -2s infinite alternate; */
+    /* -webkit- -ms- -moz- -o- */
+
+}
 
 
 
