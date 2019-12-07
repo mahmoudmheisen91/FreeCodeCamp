@@ -159,12 +159,15 @@ p {
 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: baseline;
-
+    /* align-self will override align-item
+    used for each element alone */
 
 }
+
+
 
 .container-item {
     background: rgb(36, 130, 39);
@@ -177,6 +180,13 @@ p {
     margin: 10px; 
 }
 
+
+/* grow (extra space) (0), shrink (for responsive design) (1) */
+/*  */
+/* better than float and display type */
+/* better than width and height */
+/* flex: grow shrink basis */
+/* flex: 0 1 100px */
 
 
 
