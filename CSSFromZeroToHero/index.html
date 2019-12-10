@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
+        <!-- char set for this file 
+        data about data-->
         <meta charset="UTF-8">
         <meta name="description" content="YT tutorial">
+        <meta name="author" content="me">
+        <meta name="keywords" content="project, css">
+        
+        <!-- control how is displayed 
+        in diffrent devices-->
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="style.css">
         <title> My Website </title>
     </head>
@@ -111,7 +121,7 @@
         <form>
             <input type="text" placeholder="Full Name">
             <input type="email" placeholder="Email">
-            <textarea></textarea>
+            <textarea rows="10" cols="10"></textarea>
             <button class="submit-button" >Submit</button>
             
             <p><select>
@@ -119,10 +129,14 @@
                 <option value="m">male</option>
                 <option value="f">female</option>
             </select></p>
+            <input type="range">
+            <input type="file">
+            <input type="date">
         </form>
 
         <table border="1">
             <thead>
+                <caption>table part 1</caption>
                 <tr>
                     <td>Lorem</td>
                     <td>Ipsum</td>
@@ -144,6 +158,27 @@
             </tbody>
         </table>
         <br/>
+
+        <table border="1">
+            <caption>table part 2</caption>
+        <tr>
+            <th>Lorem</th>
+            <th>Ipsum</th>
+            <th>Dolor</th>
+        </tr>
+        <tr>
+            <td>Sit</td>
+            <td colspan="2">Consectetur dfsgrgf</td>
+        </tr>
+        <tr>
+            <td>Adipisicing</td>
+            <td>Elit</td>
+            <td>Sed</td>
+        </tr>
+
+        </table>
+
+        <br/>
         <hr/>
         <small></small>
         <big></big>
@@ -158,9 +193,18 @@
         </video>
         <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/pQN-pnXPaVg" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        frameborder="0" allow="accelerometer; 
+        autoplay; encrypted-media; gyroscope;
+         picture-in-picture" 
         allowfullscreen>
         </iframe>
+
+        <div>
+            <iframe width="500" height="500"
+            src="https://www.w3schools.com/html/html5_syntax.asp">
+            sorry
+            </iframe>
+        </div>
 
     </body>
 </html>
